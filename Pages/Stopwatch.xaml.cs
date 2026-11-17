@@ -56,7 +56,6 @@ namespace TimeLord_Silkina.Pages
 
             time.Content = s_hours + ":" + s_minutes + ":" + s_seconds; // выводим на экран
         }
-
         private void StartStopwatch(object sender, RoutedEventArgs e)
         {
             if (start_stopwatch == false) // если таймер не запущен
