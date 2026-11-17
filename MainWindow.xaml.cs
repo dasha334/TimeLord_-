@@ -23,6 +23,26 @@ namespace TimeLord_Silkina
         public MainWindow()
         {
             InitializeComponent();
+
+            OpenPages(pages.stopwatch); // открываем страницу секундомера
+        }
+
+        /// <summary>
+        /// перечесляемый тип страниц
+        /// </summary>
+        public enum pages
+        {
+            stopwatch // секундомер
+        }
+
+        /// <summary>
+        /// Функция открытия страниц
+        /// </summary>
+        /// <param name="_page">Открыть страницу</param>
+        public void OpenPages(pages _page)
+        {
+            if (_page == pages.stopwatch) // если открытая страницу является секундомером
+                frame.Navigate(new Pages.Stopwatch()); // открываем страницу секундомера
         }
     }
 }
