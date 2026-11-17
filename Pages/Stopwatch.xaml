@@ -8,7 +8,14 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Stopwatch">
 
-    <Grid>
-        
+    <Grid Background="#FFE8E100">
+        <Label x:Name="time" Content="00:00:00" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="299, 95, 299, 242.6" Foreground="White" FontSize="48"/>
+        <Button x:Name="start" Click="StartStopwatch" Content="Начать" HorizontalAlignment="Left"
+                VerticalAlignment="Top" Margin="250,254,0,0" Width="100" Height="25" Background="White"
+                Foreground="#FFE8E100"/>
+        <Button Content="Иттервал" Click="AddInterval" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,254,0,0"
+            Width="100" Height="25" Background="White" Foreground="#FFE8E100"/>
+
+        <ListView x:Name="intervalsList" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,309,0,0" Width="300" Height="100"/>
     </Grid>
 </Page>
